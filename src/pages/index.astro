@@ -1,0 +1,186 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import { contents } from "../contents.js";
+import Container from "../components/Container.astro";
+import LogoSlider from "../components/LogoSlider.astro";
+---
+
+<Layout title="JedyStudio.">
+  <img
+    class="fixed pointer-events-none top-0"
+    src="/shadow.png"
+    alt="shadow image background"
+    width="100%"
+    height="100%"
+  />
+  <Nav />
+  <Container>
+    <section class="mb-24 mt-24">
+      <div class="flex justify-center py-4">
+        <span
+          class="inline max-w-max px-3 py-0.5 border-2 border-purple-400 rounded-full font-semibold text-sm text-purple-400"
+          >AGENCIA CREATIVA
+        </span>
+      </div>
+      <h1
+        class="text-neutral-800 text-4xl md:text-7xl font-normal tracking-tight w-full text-center"
+      >
+        Diseño web que inspira, convierte <br />y hace crecer tu negocio
+      </h1>
+      <p class="text-neutral-500 text-sm font-normal text-center py-10">
+        Combinamos creatividad y tecnología de vanguardia para desarrollar
+        sitios web que dejan huella. <br /> Ya sea un portafolio moderno o una plataforma
+        de e-commerce, hacemos realidad tus ideas.
+      </p>
+      <div class="flex justify-center">
+        <button
+          class="text-white text-sm px-3 py-2 font-normal bg-black border-2 border-black hover:bg-white hover:text-black transition-colors duration-300"
+        >
+          Solicitar Cotización
+        </button>
+      </div>
+    </section>
+  </Container>
+  <section class="mb-24">
+    <div class="logos group relative overflow-hidden whitespace-nowrap py-10">
+      <div
+        class="animate-slide-right inline-block w-max group-hover:[&>img]:grayscale-0"
+      >
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p1-project.jpg"
+          alt="bihogar"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p2-project.jpg"
+          alt="studio alchemy"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p3-project.jpg"
+          alt="platillosdigitales"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p4-project.jpg"
+          alt="recontrafacil"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p5-project.jpg"
+          alt="papakings"
+          width="36rem"
+          height="auto"
+        />
+      </div>
+      <div
+        class="animate-slide-right inline-block w-max group-hover:[&>img]:grayscale-0"
+      >
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p1-project.jpg"
+          alt="bihogar"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p2-project.jpg"
+          alt="studio alchemy"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p3-project.jpg"
+          alt="platillosdigitales"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p4-project.jpg"
+          alt="recontrafacil"
+          width="36rem"
+          height="auto"
+        />
+        <img
+          class="mx-2 inline w-[36rem] filter grayscale transition duration-300 ease-in-out lazyload"
+          src="/projects/p5-project.jpg"
+          alt="papakings"
+          width="36rem"
+          height="auto"
+        />
+      </div>
+    </div>
+  </section>
+  <Container>
+    <section class="mb-24 mt-24">
+      <p
+        class="text-neutral-800 text-4xl md:text-7xl font-normal tracking-tight w-full text-center"
+      >
+        Usamos las mejores tecnologías 🚀 para crear páginas web increíbles,
+        porque tu proyecto merece lo mejor y nada menos.
+      </p>
+    </section>
+    <section class="text-neutral-800 pt-8 pb-4">
+      <!-- <h2 class="text-center text-2xl mb-2 font-bold leading-8 ">Our Clients</h2>
+      <p class="text-center text-lg font-extralight leading-8 ">We are trusted by the world’s most innovative teams</h2> -->
+      <LogoSlider />
+    </section>
+    <section class="mb-24 mt-24">
+      <h2 class="text-neutral-800 text-4xl font-bold mb-12">SERVICIOS</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {
+          [1, 2, 3, 4, 5, 6].map((item) => (
+            <div class="aspect-video bg-gray-200" />
+          ))
+        }
+      </div>
+    </section>
+    <section class="mb-40 mt-40">
+      <div class="flex justify-center flex-col items-center">
+        <h2 class="text-neutral-800 text-5xl font-normal mb-8 text-center">
+          ¿Tienes alguna idea?<br /> Platiquemos.
+        </h2>
+        <div class="flex justify-center">
+          <button
+            class="text-white text-sm px-3 py-2 font-normal bg-black border-2 border-black hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            Solicitar Cotización
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="relative flex items-center py-4 overflow-hidden">
+        <img
+          src="/JedyStudio.svg"
+          alt="jedy studio logo"
+          class="h-auto w-full mr-2"
+        />
+        <div
+          class="absolute inset-0 opacity-75 -z-10 translate-y-20 w-full scale-105 md:translate-y-48"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 0%, rgb(139, 92, 246), transparent 70%)",
+            filter: "blur(40px)",
+          }}
+        >
+        </div>
+      </div>
+    </footer>
+  </Container>
+</Layout>
+
+<style></style>

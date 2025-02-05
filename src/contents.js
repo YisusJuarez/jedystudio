@@ -1,50 +1,27 @@
-export const contents = {
-    head: "Donde la creatividad \nencuentra su hogar",
-    subhead: "La creatividad es nuestra firma, tu éxito nuestro compromiso.",
-    cta_text: "¡Hazlo Realidad!",
-    process_title:"Nuestro Proceso",
-    process_steps: [{
-        title: "Consulta y Planeación",
-        description: "Analizamos tus necesidades y diseñamos una estrategia web personalizada."
-    }, {
-        title: "Diseño y Desarrollo",
-        description: "Creamos un diseño web único y atractivo que se adapte a tus necesidades y objetivos."
+export const services = [
+    {
+      title: "Páginas Web para Startups",
+      description: "Creamos sitios modernos y escalables para startups que necesitan una presencia digital impactante desde el día uno.",
+      tags: ["Landing Pages", "MVP", "Optimización"],
     },
-    ],
-
-    process_steps_2: [
-        {
-            title: "Lanzamiento",
-            description: "Tu sitio web estará listo para ser lanzado en el menor tiempo posible y nos aseguramos que tu sitio web sea visible en los motores de búsqueda."
-        }, {
-            title: "Mantenimiento",
-            description: "Nos encargamos de mantener tu sitio web actualizado y seguro. Realizamos copias de seguridad periódicas y monitoreamos su rendimiento."
-        },
-    ],
-    tecnologies:"Las mejores tecnologías para tu proyecto",
-    tecnologies_list: [
-        {
-            name: "React",
-            description: "React es una biblioteca de JavaScript para construir interfaces de usuario."
-        }, {
-            name: "Google Ads",
-            description: "Node.js es un entorno de ejecución para JavaScript construido con el motor de JavaScript V8 de Chrome."
-        }, {
-            name: "Hotjar",
-            description: "MongoDB es una base de datos NoSQL de código abierto y orientada a documentos."
-        },{
-            name: "Wordpress",
-            description: "MongoDB es una base de datos NoSQL de código abierto y orientada a documentos."
-        },{
-            name: "Astro",
-            description: "MongoDB es una base de datos NoSQL de código abierto y orientada a documentos."
-        },{
-            name: "Webflow",
-            description: "MongoDB es una base de datos NoSQL de código abierto y orientada a documentos."
-        },{
-            name: "Framer",
-            description: "MongoDB es una base de datos NoSQL de código abierto y orientada a documentos."
-        },
-    ],
-
-}
+    {
+      title: "Sitios Web para Captar Clientes",
+      description: "Diseñamos páginas estratégicas con alto enfoque en conversión y SEO para atraer más clientes y generar ventas.",
+      tags: ["SEO", "Embudos de Venta", "Optimización UX/UI"],
+    },
+    {
+      title: "Sitios Web Corporativos",
+      description: "Desarrollamos sitios profesionales para empresas que necesitan transmitir confianza, autoridad y profesionalismo.",
+      tags: ["Empresas", "Instituciones", "Diseño a Medida"],
+    },
+    {
+      title: "Blogs y Sitios Informativos",
+      description: "Desarrollamos plataformas de contenido optimizadas para compartir información de manera clara y eficiente.",
+      tags: ["Noticias", "Educación", "SEO para contenido"],
+    },
+    {
+      title: "Optimización y Rediseño Web",
+      description: "Mejoramos sitios web existentes con un diseño moderno, mayor velocidad de carga y mejor experiencia de usuario.",
+      tags: ["Rendimiento", "Rediseño", "Core Web Vitals"],
+    },
+  ];

@@ -1,0 +1,24 @@
+---
+import { services } from "../contents";
+---
+<div class="space-y-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {services.map((item, index) => (
+        <div
+          class="border border-gray-200  p-6 transition-all duration-300 hover:border-purple-400 shadow-lg"
+        >
+          <h2 class="text-lg font-medium mb-2 text-gray-800">{item.title}</h2>
+          <p class="text-sm text-gray-600 mb-4">{item.description}</p>
+          <div class="flex flex-wrap gap-2">
+            {item.tags.map((tag, tagIndex) => (
+              <span class="text-xs text-gray-500 border border-gray-300 rounded-full px-2 py-1">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+  </div>
+</div>
+
+

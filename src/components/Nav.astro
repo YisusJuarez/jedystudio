@@ -3,15 +3,25 @@ import Container from "./Container.astro";
 import Logo from "./Logo.astro";
 ---
 
-<nav class="">
+<nav id="navbar" class="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-md transition-all duration-300 z-50">
   <Container>
-    <div class="flex justify-between">
-      <div class="flex space-x-7">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center">
         <Logo />
-      </div>
-      <div class="flex items-center space-x-3">
-        <!-- <Logo /> -->
       </div>
     </div>
   </Container>
 </nav>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        navbar.classList.add("shadow-md", "bg-white/80");
+      } else {
+        navbar.classList.remove("shadow-md", "bg-white/80");
+      }
+    });
+  });
+</script>

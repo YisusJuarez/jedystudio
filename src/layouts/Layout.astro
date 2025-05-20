@@ -20,7 +20,7 @@ const { title } = Astro.props;
 
     <!-- Apple Touch Icon para iOS -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/> 
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
     <!-- Manifesto para PWA -->
     <link rel="manifest" href="/site.webmanifest" />
 
@@ -36,10 +36,7 @@ const { title } = Astro.props;
       content="diseño web, desarrollo web, landing pages, SEO, ecommerce, branding digital"
     />
     <meta name="author" content="JedyStudio" />
-    <meta
-      property="og:title"
-      content={title}
-    />
+    <meta property="og:title" content={title} />
     <meta
       property="og:description"
       content="Creamos sitios web impactantes que convierten y potencian tu negocio."
@@ -47,6 +44,20 @@ const { title } = Astro.props;
     <meta property="og:image" content="/logo.png" />
     <meta property="og:url" content="https://jedystudio.com" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16944555225"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16944555225");
+    </script>
   </head>
   <body>
     <slot />

@@ -1,0 +1,32 @@
+---
+const whatsappLink = "https://wa.me/5215518216560"; // reemplaza con tu número de WhatsApp
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo a WhatsApp...</title>
+    <meta http-equiv="refresh" content="2;url={whatsappLink}" />
+    <!-- Event snippet for Request quote conversion page -->
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-16944555225/dubsCJSy-coaENnJ5Y8_",
+        value: 1.0,
+        currency: "MXN",
+      });
+    </script>
+
+    <script>
+      setTimeout(() => {
+        window.location.href = "{whatsappLink}";
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <p>
+      Redirigiendo a WhatsApp... Si no pasa nada, <a href="{whatsappLink}"
+        >haz clic aquí</a
+      >.
+    </p>
+  </body>
+</html>

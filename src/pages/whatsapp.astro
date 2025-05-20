@@ -1,6 +1,4 @@
----
-const whatsappLink = "https://wa.me/5215518216560"; // reemplaza con tu número de WhatsApp
----
+
 
 <html lang="es">
   <head>
@@ -15,18 +13,14 @@ const whatsappLink = "https://wa.me/5215518216560"; // reemplaza con tu número 
         currency: "MXN",
       });
     </script>
-
-    <script>
-      setTimeout(() => {
-        window.location.href = "{whatsappLink}";
-      }, 1000);
-    </script>
   </head>
   <body>
-    <p>
-      Redirigiendo a WhatsApp... Si no pasa nada, <a href="{whatsappLink}"
-        >haz clic aquí</a
-      >.
-    </p>
+    <p style="display: none">Redirigiendo...</p>
+    <script>
+        // Aquí debes poner la variable directamente con backticks
+        setTimeout(() => {
+          window.location.href = `https://wa.me/5215518216560?text=Quiero%20cotizar%20una%20p%C3%A1gina%20web`;
+        }, 1000);
+      </script>
   </body>
 </html>

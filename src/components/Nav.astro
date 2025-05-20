@@ -4,12 +4,15 @@ import Logo from "./Logo.astro";
 import Offer from "./Offer.astro";
 ---
 
-<nav id="navbar" class="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-md transition-all duration-300 z-50">
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 w-full bg-white/10 backdrop-blur-md transition-all duration-300 z-50"
+>
   <Offer />
   <Container>
     <div class="flex justify-between items-center">
       <div class="flex items-center">
-        <Logo />
+        <a href="/" target="_self" rel="noopener"> <Logo /></a>
       </div>
     </div>
   </Container>

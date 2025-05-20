@@ -1,23 +1,23 @@
+---
+const whatsappLink = "https://wa.me/5215518216560?text=Quiero%20cotizar%20una%20página%20web";
+---
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>Redirigiendo a WhatsApp...</title>
-    <meta http-equiv="refresh" content="2;url={whatsappLink}" />
+
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-16944555225"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16944555225"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "AW-16944555225");
-    </script>
-    <!-- Event snippet for Request quote conversion page -->
-    <script>
+
+      // Evento de conversión
       gtag("event", "conversion", {
         send_to: "AW-16944555225/dubsCJSy-coaENnJ5Y8_",
         value: 1.0,
@@ -26,12 +26,14 @@
     </script>
   </head>
   <body>
-    <p style="display: none">Redirigiendo...</p>
+    <p style="text-align: center; font-size: 18px; margin-top: 2rem;">
+      Redirigiendo a WhatsApp...
+    </p>
+
     <script>
-      // Aquí debes poner la variable directamente con backticks
       setTimeout(() => {
-        window.location.href = `https://wa.me/5215518216560?text=Quiero%20cotizar%20una%20p%C3%A1gina%20web`;
-      }, 500);
+        window.location.href = `https://wa.me/5215518216560?text=Quiero%20cotizar%20una%20página%20web`;
+      }, 1000); // Dale al menos 800–1000 ms
     </script>
   </body>
 </html>
